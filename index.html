@@ -17,6 +17,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
+<script>
+ function Enter(){
+     let email = document.getElementById("email").value=$email;
+     
+     window.open(
+              "https://www.freecodecamp.org/",$email, "_blank");
+ }
+</script>
 <body class="container" style="background-color: azure;" >
     <section id="header" >
         <div class="row" style="margin-top: 10px ;" >
@@ -30,23 +38,27 @@
             <div class="col-md-1" > <a href="#" class="nav-link" style="color: black; margin: 10px ; padding: 10px ;" > Pricing </a> </div>
       </div>  </div>
     </section>
-<center>
-    <section >
-        <h3 style="font-weight: bold ;" class="center" > Handcrafted, home-made masterpieces </h3>
-        <form action="" id="form" >
 
-            <input type="email" id="email" placeholder="Enter your email address" style="width: 300px;" required>
-
-        </form>
-    </section>
-</center>
     <center>
     <section id="video" style="margin-top: 50px ;" >
         <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </section>
     </center>
-
+    <center>
+        <section >
+            <h3 style="font-weight: bold ;" class="center" > Handcrafted, home-made masterpieces </h3>
+            <form action="" id="form" >
+    
+                <input type="email" id="email" placeholder="Enter your email address" style="width: 300px;" required>
+                
+                <div>
+                    <input type="submit" id="submit" class="btn btn-warning" value="GET STARTED" style="margin-top: 10px;color: black; font-weight: bold;" onclick="Enter()"> 
+                </div>
+                
+            </form>
+        </section>
+    </center>
 
 
     
